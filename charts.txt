@@ -1,0 +1,16 @@
+#本应用默认以二维表中的行数据为基本单位，列数据为单位内部的数据项
+#如需以列为基本单位，行为数据项，请将cateid改为1
+cateid=0
+#数据路径（绝对路径）,等号后紧跟路径，必填.
+d_path=/Users/zhaoyantao/Desktop/php/chartsTested/json/otherData2.json
+#选择chartid,饼形图，id=0；柱状图，id=1；折线图，id=2，等号后紧跟id,必填.
+chartid=1
+#选择绘图行列
+#绘制饼状图时，指定row则绘制指定行数的若干张数据图，指定col时,即指定每张图表中的若为空，则默认绘制全部数据。绘制非饼状图时，可选择绘制部分数据，如选择绘制一 三行，二 四列，则row=1,3;col=2,4；若为空则默认绘制全部数据，等号后紧跟数字。
+row=1
+col=1,2,3
+#图片保存路径（绝对路径）等号后紧跟路径,且须为文件夹，以／结尾，如／Users/zhaoyantao/
+p_path=/Users/zhaoyantao/Desktop/bar.jpeg
+#当为横纵轴为类目时，可附加类目名，xaxis_name为数据项的类目，yaxis_name为数据的类目
+xaxis_name=科目
+yaxis_name=分数
